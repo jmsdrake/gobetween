@@ -44,8 +44,7 @@ func (b *WeightBalancer) Elect(context core.Context, backends []*core.Backend) (
 			}
 			return backend, nil
 		}
-	}
-	else {
+	} else {
 		r2 := rand.Intn(totalWeight)
 		pos := 0
 
